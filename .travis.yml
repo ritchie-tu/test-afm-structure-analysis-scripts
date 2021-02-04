@@ -1,5 +1,6 @@
 language: matlab
 matlab:
   - latest  # Default MATLAB release on Travis CI
+  - R2020b
   - rm -rf .git
   - git clone https://e01652322:AV6e6VGo_ZqQ4rnnCvwZ@gitlab.tuwien.ac.at/e01652322/afm-structure-analysis-scripts.git

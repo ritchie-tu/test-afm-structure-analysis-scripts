@@ -2,5 +2,11 @@ language: matlab
 matlab:
   - latest  # Default MATLAB release on Travis CI
   - R2020b
+
+before_script:
   - rm -rf .git
   - git clone https://e01652322:AV6e6VGo_ZqQ4rnnCvwZ@gitlab.tuwien.ac.at/e01652322/afm-structure-analysis-scripts.git
+
+script:
+  - matlab -batch "r = runtests('IncludeSubfolders',true); assert(~isempty(r)); assertSuccess(r)"
+

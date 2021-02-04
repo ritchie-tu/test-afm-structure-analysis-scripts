@@ -1,4 +1,4 @@
-classdef TestSplitting < matlab.unittest.TestCase
+classdef TestEmpty < matlab.unittest.TestCase
    
     
     methods (Test)

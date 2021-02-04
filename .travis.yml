@@ -5,7 +5,8 @@ matlab:
 
 before_script:
   - rm -rf .git
-  - git clone https://e01652322:AV6e6VGo_ZqQ4rnnCvwZ@gitlab.tuwien.ac.at/e01652322/afm-structure-analysis-scripts.git
+  - git clone https://e01652322:AV6e6VGo_ZqQ4rnnCvwZ@gitlab.tuwien.ac.at/e01652322/afm-structure-analysis-scripts.git code
+  - cd code/mathlab
 
 script:
   - matlab -batch "r = runtests('IncludeSubfolders',true); assert(~isempty(r)); assertSuccess(r)"
